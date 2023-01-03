@@ -39,3 +39,7 @@ filetype on
 filetype plugin on
 filetype indent on
 set cinoptions=:0g0(0
+
+" syntax highlighting settings
+syntax on
+set background=light
