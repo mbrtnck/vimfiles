@@ -43,3 +43,6 @@ set cinoptions=:0g0(0
 " syntax highlighting settings
 syntax on
 set background=light
+
+" non-printable characters display settings (when ':set list' command is used)
+set listchars=eol:$,tab:>-,space:.,trail:.,extends:+,precedes:+,conceal:=,nbsp:_
