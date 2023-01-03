@@ -27,3 +27,9 @@ set linebreak
 " write settings
 set confirm
 set nobackup
+
+" search settings
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
