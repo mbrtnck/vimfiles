@@ -33,3 +33,9 @@ set incsearch
 set ignorecase
 set smartcase
 set hlsearch
+
+" indentation settings
+filetype on
+filetype plugin on
+filetype indent on
+set cinoptions=:0g0(0
