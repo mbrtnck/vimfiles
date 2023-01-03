@@ -23,3 +23,7 @@ set backspace=indent,eol,start
 set nojoinspaces
 set breakindent
 set linebreak
+
+" write settings
+set confirm
+set nobackup
