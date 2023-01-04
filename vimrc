@@ -21,9 +21,9 @@ let loaded_matchparen = 1
 " edit settings
 set textwidth=0
 set tabstop=8
-set noexpandtab
-set softtabstop=0
-set shiftwidth=8
+set expandtab
+set softtabstop=4
+set shiftwidth=4
 set backspace=indent,eol,start
 set nojoinspaces
 set breakindent
