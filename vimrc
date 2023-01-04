@@ -1,6 +1,6 @@
 " Configuration file for Vim text editor
 "
-" Latest revision: 2023-01-03
+" Latest revision: 2023-01-04
 "
 " Copyright (c) 2023 Mikołaj Bartnicki <mbrtnck@gmail.com>
 " All rights reserved.
