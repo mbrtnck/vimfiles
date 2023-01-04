@@ -12,7 +12,6 @@ set nocompatible
 language messages en_US.UTF-8
 set encoding=UTF-8
 set fileencoding=UTF-8
-set guifont=Consolas:h12:cEASTEUROPE
 
 " display settings
 set ruler
@@ -51,3 +50,13 @@ set background=light
 
 " non-printable characters display settings (when ':set list' command is used)
 set listchars=eol:$,tab:>-,space:.,trail:.,extends:+,precedes:+,conceal:=,nbsp:_
+
+" gVim-specific settings
+if has("gui_running")
+    set langmenu=en_US.UTF-8
+    set columns=85
+    set lines=48
+    set number
+    set background=light
+    set guifont=Consolas:h12:cEASTEUROPE
+endif
