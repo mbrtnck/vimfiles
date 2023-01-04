@@ -66,3 +66,35 @@ if has("gui_running")
         set guifont=Monospace\ 12               " looks fine on Linux/Gnome
     endif
 endif
+
+" automatic commands
+if has("autocmd")
+    " wrap lines at 72 column in plain text files
+    autocmd FileType text set textwidth=72
+
+    " wrap lines at 72 column in Markdown files
+    autocmd FileType markdown set textwidth=72
+
+    " wrap lines at 72 column in git commit messages
+    autocmd BufNewFile,BufReadPre COMMIT_EDITMSG set textwidth=72
+
+    " wrap lines at 72 column in alpine e-mail client
+    autocmd BufNewFile,BufReadPre /tmp/pico.* set textwidth=72
+
+    " delete empty or whitespace-only lines at the end of file
+    autocmd BufWritePre * :%s/\(\s*\n\)\+\%$//ge
+
+    " reduce each group of empty or whitespace-only lines to one empty line
+    autocmd BufWritePre * :%s/\(\s*\n\)\{3,}/\r\r/ge
+
+    " delete all trailing whitespaces
+    " use with caution when editing Markdown code
+    autocmd BufWritePre * :%s/\s\+$//ge
+
+    " restore a trailing space in e-mail signature separator (for alpine client)
+    " must be called after removing trailing whitespaces
+    autocmd BufWritePre /tmp/pico.* :%s/^--$/--\ /ge
+
+    " format Go source code on save
+    autocmd BufWritePre *.go :1,$!gofmt
+endif
