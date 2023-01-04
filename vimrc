@@ -9,55 +9,55 @@
 set nocompatible
 
 " i18n settings
-language messages en_US.UTF-8
-set encoding=UTF-8
-set fileencoding=UTF-8
+language messages en_US.UTF-8   " language of messages
+set encoding=UTF-8              " encoding used to display edited file
+set fileencoding=UTF-8          " encoding used to save edited file
 
 " display settings
-set ruler
-let loaded_matchparen = 1
+set ruler                       " show cursor position
+let loaded_matchparen = 1       " disable highlighting of matching parenthesis
 
 " edit settings
-set textwidth=0
-set tabstop=8
-set expandtab
-set softtabstop=4
-set shiftwidth=4
-set backspace=indent,eol,start
-set nojoinspaces
-set breakindent
-set linebreak
+set textwidth=0                 " don't wrap long lines by default
+set tabstop=8                   " tab size (columns)
+set expandtab                   " fill tabs with spaces
+set shiftwidth=4                " indentation depth
+set softtabstop=4               " [Backspace] over virtual tabs
+set backspace=indent,eol,start  " [Backspace] over everything in insert mode
+set nojoinspaces                " No extra space after a dot when joining lines
+set breakindent                 " keep indentation when breaking long lines
+set linebreak                   " don't break lines in the middle of the word
 
 " write settings
-set confirm
-set nobackup
+set confirm                     " confirm :q in case of unsaved changes
+set nobackup                    " don't make backup~ files
 
 " search settings
-set incsearch
-set ignorecase
-set smartcase
-set hlsearch
+set incsearch                   " do incremental search
+set ignorecase                  " do case insensitive search...
+set smartcase                   " ...unless capital letters are used
+set hlsearch                    " highlight search results
 
 " indentation settings
-filetype on
-filetype plugin on
-filetype indent on
-set cinoptions=:0g0(0
+filetype on                     " enable file type detection
+filetype plugin on              " load plugins for specific file types
+filetype indent on              " automatically indent code
+set cinoptions=:0g0(0           " indentation tuning
 
 " syntax highlighting settings
-syntax on
-set background=light
+syntax on                       " enable syntax highlighting
+set background=light            " use light background for terminal
 
 " non-printable characters display settings (when ':set list' command is used)
 set listchars=eol:$,tab:>-,space:.,trail:.,extends:+,precedes:+,conceal:=,nbsp:_
 
 " gVim-specific settings
 if has("gui_running")
-    set langmenu=en_US.UTF-8
-    set columns=85
-    set lines=48
-    set number
-    set background=light
+    set langmenu=en_US.UTF-8    " language of GUI windows menus
+    set columns=85              " window geometry (width)
+    set lines=48                " window geometry (height)
+    set number                  " display line numbers
+    set background=light        " use light background for GUI
 
     " font for displaying edited files and messages
     if has("windows")
