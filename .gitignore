@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,git,vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,git,vim
+# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,git,vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,git,vim
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -16,6 +16,21 @@
 *_LOCAL_*.txt
 *_REMOTE_*.txt
 
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
@@ -31,7 +46,6 @@ Sessionx.vim
 
 # Temporary
 .netrwhist
-*~
 # Auto-generated tag files
 tags
 # Persistent undo
@@ -63,4 +77,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,git,vim
+# End of https://www.toptal.com/developers/gitignore/api/windows,linux,git,vim

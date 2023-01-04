@@ -58,5 +58,11 @@ if has("gui_running")
     set lines=48
     set number
     set background=light
-    set guifont=Consolas:h12:cEASTEUROPE
+
+    " font for displaying edited files and messages
+    if has("windows")
+        set guifont=Consolas:h12:cEASTEUROPE    " looks fine on Windows
+    elseif has("unix")
+        set guifont=Monospace\ 12               " looks fine on Linux/Gnome
+    endif
 endif
