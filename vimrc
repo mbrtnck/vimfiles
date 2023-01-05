@@ -55,7 +55,7 @@ set listchars=eol:$,tab:>-,space:.,trail:.,extends:+,precedes:+,conceal:=,nbsp:_
 if has("gui_running")
     set langmenu=en_US.UTF-8    " language of GUI windows menus
     set columns=85              " window geometry (width)
-    set lines=48                " window geometry (height)
+    set lines=37                " window geometry (height)
     set number                  " display line numbers
     set background=light        " use light background for GUI
 
