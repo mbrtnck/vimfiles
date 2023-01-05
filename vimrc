@@ -51,6 +51,9 @@ set background=light            " use light background for terminal
 " non-printable characters display settings (when ':set list' command is used)
 set listchars=eol:$,tab:>-,space:.,trail:.,extends:+,precedes:+,conceal:=,nbsp:_
 
+" runtime settings
+runtime macros/justify.vim      " enable '_j' keymap for text justification
+
 " gVim-specific settings
 if has("gui_running")
     set langmenu=en_US.UTF-8    " language of GUI windows menus
