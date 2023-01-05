@@ -61,9 +61,9 @@ if has("gui_running")
 
     " font for displaying edited files and messages
     if has("windows")
-        set guifont=Consolas:h12:cEASTEUROPE    " looks fine on Windows
+        set guifont=Consolas:h16:cEASTEUROPE    " looks fine on Windows
     elseif has("unix")
-        set guifont=Monospace\ 12               " looks fine on Linux/Gnome
+        set guifont=Monospace\ 16               " looks fine on Linux/Gnome
     endif
 endif
 
