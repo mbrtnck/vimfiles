@@ -8,12 +8,20 @@ ever published.
 
 ## Installation
 
-Just clone the repository as it is, directly into your home directory. The
-following commands are common for both Windows and Linux, provided that
-working Git installation is available:
+For both Windows and Linux, working installation of Git is required. Use
+the right command for your operating system.
 
-    cd ~
-    git clone https://github.com/mbrtnck/vimfiles
+### Windows
+
+Just clone the repository as it is, directly into your home directory:
+
+    git clone https://github.com/mbrtnck/vimfiles ~
+
+### Linux
+
+Clone the repository content into `.vim` subfolder of your home directory:
+
+    git clone https://github.com/mbrtnck/vimfiles ~/.vim
 
 That's it!
 
