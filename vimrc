@@ -24,7 +24,7 @@ set expandtab                   " fill tabs with spaces
 set shiftwidth=4                " indentation depth
 set softtabstop=4               " [Backspace] over virtual tabs
 set backspace=indent,eol,start  " [Backspace] over everything in insert mode
-set nojoinspaces                " No extra space after a dot when joining lines
+set nojoinspaces                " no extra space after a dot when joining lines
 set breakindent                 " keep indentation when breaking long lines
 set linebreak                   " don't break lines in the middle of the word
 
@@ -42,7 +42,7 @@ set hlsearch                    " highlight search results
 filetype on                     " enable file type detection
 filetype plugin on              " load plugins for specific file types
 filetype indent on              " automatically indent code
-set cinoptions=:0g0(0           " indentation tuning
+set cinoptions=:0g0(0           " indentation tuning, see ':help cinoptions'
 
 " syntax highlighting settings
 syntax on                       " enable syntax highlighting
