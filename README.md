@@ -2,8 +2,8 @@
 
 A set of my configuration files for [Vim][00] text editor. This is a
 compilation of many different configs I've made for myself over the
-years since I was introduced to Vim in 2002; gathered together, cleaned
-up and updated. It's my oldest and longest evolving work I ever published.
+years since I was introduced to Vim in 2002. All gathered together, cleaned
+up and updated. It's my oldest and longest evolving work I've ever published.
 
 ## Installation
 
