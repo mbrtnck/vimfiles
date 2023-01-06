@@ -56,7 +56,7 @@ runtime macros/justify.vim      " enable '_j' keymap for text justification
 
 " gVim-specific settings
 if has("gui_running")
-    set langmenu=en_US.UTF-8    " language of GUI windows menus
+    set langmenu=en_US.UTF-8    " language of GUI window menus
     set columns=85              " window geometry (width)
     set lines=37                " window geometry (height)
     set number                  " display line numbers
