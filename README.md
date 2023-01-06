@@ -19,4 +19,4 @@ That's it!
 
 ## Author
 
-&copy; 2002 - 2023 [Mikołaj Bartnicki](mailto://mikolaj@bartnicki.org)
+Copyright &copy; 2002 [Mikołaj Bartnicki](mailto://mikolaj@bartnicki.org)

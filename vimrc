@@ -2,7 +2,7 @@
 "
 " Latest revision: 2023-01-05
 "
-" Copyright (c) 2023 Mikołaj Bartnicki <mbrtnck@gmail.com>
+" Copyright (c) 2002 Mikołaj Bartnicki <mikolaj@bartnicki.org>
 " All rights reserved.
 
 " work as vi improved instead of pure vi, must be the first instruction
