@@ -20,7 +20,7 @@ let loaded_matchparen = 1       " disable highlighting of matching parenthesis
 " edit settings
 set textwidth=0                 " don't wrap long lines by default
 set tabstop=8                   " tab size (columns)
-set expandtab                   " fill tabs with spaces
+set expandtab                   " fill tabs with spaces, use <C-v><Tab> for tab
 set shiftwidth=4                " indentation depth
 set softtabstop=4               " [Backspace] over indentation
 set backspace=indent,eol,start  " [Backspace] over everything in insert mode
