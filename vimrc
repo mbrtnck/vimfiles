@@ -54,6 +54,13 @@ set listchars=eol:$,tab:>-,space:.,trail:.,extends:+,precedes:+,conceal:=,nbsp:_
 " runtime settings
 runtime macros/justify.vim      " enable '_j' keymap for text justification
 
+" use Solarized color scheme in Linux terminal
+if has("unix")
+    set t_co=16                     " required by Solarized in terminal
+    let g:solarized_termcolors = 16 " required by Solarized in terminal
+    colorscheme solarized           " use Solarized color scheme
+endif
+
 " gVim-specific settings
 if has("gui_running")
     set langmenu=en_US.UTF-8    " language of GUI window menus
@@ -61,6 +68,10 @@ if has("gui_running")
     set lines=37                " window geometry (height)
     set number                  " display line numbers
     set background=light        " use light background for GUI
+    colorscheme solarized       " use Solarized color scheme
+
+    " change background of columns beyond textwidth
+    execute "set colorcolumn=+".join(range(1, 256), ",+")
 
     " font for displaying edited files and messages
     if has("windows")
