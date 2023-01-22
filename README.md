@@ -38,19 +38,23 @@ Clone the Libre Office dictionaries and Vim repositories:
     git clone https://github.com/LibreOffice/dictionaries
     git clone https://github.com/vim/vim
 
-Go to the Libre Office dictionary and copy the Vim `pl_PL.diff` file
+Go to the Libre Office dictionary and copy Vim `pl_PL.diff` file
 into it:
 
     cd dictionaries/pl_PL
-    cp ../vim/runtime/spell/pl_PL.diff .
+    cp ../../vim/runtime/spell/pl/pl_PL.diff .
 
 Apply the Vim diff file. This will create `pl.utf-8.spl` dictionary file
 for Vim:
 
     patch < pl_PL.diff
 
-Once the `*.spl` file is ready, copy it to Vim `spell` directory.
-Windows command is:
+Run Vim and make the spellcheck dictionary file by the command:
+
+    mkspell! pl pl_PL
+
+Once the `*.spl` file is ready (be patient, it takes some time), copy it
+to Vim `spell` directory. Windows command is:
 
     mkdir -p ~/vimfiles/spell && cp pl.utf-8.spl ~/vimfiles/spell
 
