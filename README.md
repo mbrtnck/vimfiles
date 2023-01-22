@@ -28,35 +28,35 @@ That's it!
 
 ### Spellcheck
 
-Ready to use spellcheck dictionaries in Vim `*.spl` format are included.
-However, since auto downloading them by vim fails, you need to re-create
-them when needed, i.e. to add the missing ones you need or to update
-them. Here is the example of the process for Polish spellcheck.
+Ready to use spellcheck dictionaries in Vim `*.spl` file format are
+included. However, since auto downloading them by vim fails, you need to
+re-create them when needed, i.e. to add the missing ones you need or to
+update them. Here is the example of the process for Polish spellcheck.
 
 Clone the Libre Office dictionaries and Vim repositories:
 
     git clone https://github.com/LibreOffice/dictionaries
     git clone https://github.com/vim/vim
 
-Go to the Libre Office dictionary and copy the Vim `*.diff` file into
-it:
+Go to the Libre Office dictionary and copy the Vim `pl_PL.diff` file
+into it:
 
     cd dictionaries/pl_PL
     cp ../vim/runtime/spell/pl_PL.diff .
 
-Apply the Vim diff file. This will create `*.spl` dictionary file for
-Vim:
+Apply the Vim diff file. This will create `pl.utf-8.spl` dictionary file
+for Vim:
 
     patch < pl_PL.diff
 
-Once the `*.spl` file is ready, copy it to vim spell directory. Windows
-command is:
+Once the `*.spl` file is ready, copy it to Vim `spell` directory.
+Windows command is:
 
-    mkdir -p ~/vimfiles/spell && cp .spl ~/vimfiles/spell
+    mkdir -p ~/vimfiles/spell && cp pl.utf-8.spl ~/vimfiles/spell
 
 And for Linux it is:
 
-    mkdir -p ~/.vim/spell && cp .spl ~/.vim/spell
+    mkdir -p ~/.vim/spell && cp pl.utf-8.spl ~/.vim/spell
 
 Repeat the above procedure for each spellcheck language you need.
 
