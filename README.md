@@ -9,7 +9,9 @@ ever published.
 ## Installation
 
 For both Windows and Linux, working installation of Git is required. Use
-the right command for your operating system.
+the right command for your operating system. For Windows I strongly
+recommend Git Bash terminal that comes together with Git. For Linux any
+terminal should work.
 
 ### Windows
 
@@ -28,10 +30,11 @@ That's it!
 
 ### Spellcheck
 
-Ready to use spellcheck dictionaries in Vim `*.spl` file format are
-included. However, since auto downloading them by vim fails, you need to
-re-create them when needed, i.e. to add the missing ones you need or to
-update them. Here is the example of the process for Polish spellcheck.
+Ready to use Polish and English spellcheck dictionaries in Vim `*.spl`
+file format are included in this config set. If you need some other
+languages (or want to udpate the existing ones), you must create the
+corresponding `*.spl` files yourself. It is simple process, here is the
+example for Polish spellcheck.
 
 Clone the Libre Office dictionaries and Vim repositories:
 
