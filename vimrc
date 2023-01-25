@@ -100,14 +100,76 @@ if has("autocmd")
     " reduce each group of empty or whitespace-only lines to one empty line
     autocmd BufWritePre * :%s/\(\s*\n\)\{3,}/\r\r/ge
 
-    " delete all trailing whitespaces
+    " delete all trailing white spaces
     " use with caution when editing Markdown code
     autocmd BufWritePre * :%s/\s\+$//ge
 
     " restore a trailing space in e-mail signature separator (for alpine client)
-    " must be called after removing trailing whitespaces
+    " must be called after removing trailing white spaces
     autocmd BufWritePre /tmp/pico.* :%s/^--$/--\ /ge
 
     " format Go source code on save
     autocmd BufWritePre *.go :1,$!gofmt
 endif
+
+" keyboard mapping
+
+" center view on the next search result
+nnoremap n nzz
+nnoremap N Nzz
+
+" press [F2] to toggle background between light and dark
+nnoremap <F2> :let &bg = (&bg == "dark" ? "light" : "dark")<CR>
+inoremap <F2> <C-o>:let &bg = (&bg == "dark" ? "light" : "dark")<CR>
+
+" press [F3] to toggle displaying line numbers
+nnoremap <F3> :set number!<CR>
+inoremap <F3> <C-o>:set number!<CR>
+
+" press [F4] to toggle showing non-printable characters
+nnoremap <F4> :set list!<CR>
+inoremap <F4> <C-o>:set list!<CR>
+
+" press [F5] to turn search results highlight off
+nnoremap <F5> :nohl<CR>
+inoremap <F5> <C-o>:nohl<CR>
+
+" press [Ctrl]+[F5] to Polish spellcheck (z= for proposed corrections)
+nnoremap <C-F5> :set spell! spelllang=pl<CR>
+inoremap <C-F5> <Esc>:set spell! spelllang=pl<CR>
+
+" press [Alt]+[F5] to English spellcheck (z= for proposed corrections)
+nnoremap <M-F5> :set spell! spelllang=en<CR>
+inoremap <M-F5> <Esc>:set spell! spelllang=en<CR>
+
+" press [F6] to sort current paragraph
+nnoremap <F6> m'vip:sort<CR>``zz
+inoremap <F6> <Esc>m'vip:sort<CR>``zzgi
+
+" press [Ctrl]+[F6] to sort current paragraph removing duplicate lines
+nnoremap <C-F6> m'vip:sort u<CR>``zz
+inoremap <C-F6> <Esc>m'vip:sort u<CR>``zzgi
+
+" press [F7] to automatically break long lines at 72nd column
+nnoremap <F7> :set textwidth=72<CR>
+inoremap <F7> <C-o>:set textwidth=72<CR>
+
+" press [F8] to automatically break long lines at 80th column
+nnoremap <F8> :set textwidth=80<CR>
+inoremap <F8> <C-o>:set textwidth=80<CR>
+
+" press [F9] to disable breaking long lines
+nnoremap <F9> :set textwidth=0<CR>
+inoremap <F9> <C-o>:set textwidth=0<CR>
+
+" press [F10] to fix indentation in whole file
+nnoremap <F10> m'ggVG=``zz
+inoremap <F10> <Esc>m'ggVG=``zzgi
+
+" press [F11] to justify current paragraph (macros/justify.vim required)
+nmap <F11> m'vip_j``zz
+imap <F11> <Esc>m'vip_j``zzgi
+
+" press [Ctrl]+[F11] to justify the whole file (macros/justify.vim required)
+nmap <C-F11> m'_j``zz
+imap <C-F11> <Esc>m'_j``zzgi
