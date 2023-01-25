@@ -6,7 +6,7 @@ years since I was introduced to Vim in 2002. All gathered together,
 cleaned up and updated. It's my oldest and longest evolving work I've
 ever published.
 
-## Installation
+## Setup
 
 For both Windows and Linux, working installation of Git is required. Use
 the right command for your operating system. For Windows I strongly
@@ -17,7 +17,7 @@ terminal should work.
 
 Just clone the repository as it is, directly into your home directory:
 
-    git clone https://github.com/mbrtnck/vimfiles ~
+    git clone https://github.com/mbrtnck/vimfiles ~/vimfiles
 
 ### Linux
 
