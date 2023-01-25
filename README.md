@@ -31,11 +31,11 @@ That's it!
 ### Spellcheck
 
 Vim has English spellcheck built-in; dictionaries for other languages
-must be installed manually. Ready to use Polish and English spellcheck
-dictionaries in Vim `*.spl` file format are included in this config set.
-If you need some other languages (or want to udpate the existing ones),
-you must create the corresponding `*.spl` files yourself. It is simple
-process, here is the example for Polish spellcheck.
+must be installed manually. Ready to use Polish spellcheck dictionary in
+Vim `*.spl` file format is included in this config set. If you need some
+other languages (or want to udpate the existing ones), you must create
+the corresponding `*.spl` files yourself. It is simple process, here is
+the example for Polish spellcheck.
 
 Clone the Libre Office dictionaries and Vim repositories:
 
