@@ -1,4 +1,6 @@
 " Vim indent file
+" Modified so that the case labels are not indented.
+
 " Language:            Shell Script
 " Maintainer:          Christian Brabandt <cb@256bit.org>
 " Original Author:     Nikolai Weibull <now@bitwi.se>
@@ -55,7 +57,7 @@ set cpo&vim
 let s:sh_indent_defaults = {
       \ 'default': function('shiftwidth'),
       \ 'continuation-line': function('shiftwidth'),
-      \ 'case-labels': function('shiftwidth'),
+      \ 'case-labels': 0,
       \ 'case-statements': function('shiftwidth'),
       \ 'case-breaks': 0 }
 
