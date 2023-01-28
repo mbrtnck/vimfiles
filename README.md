@@ -70,8 +70,12 @@ Repeat the above procedure for each spellcheck language you need.
 
 ## Credits
 
-I use absolutely beautiful [Solarized][01] color scheme that is work of
-[Ethan Schoonover][02].
+In this config set I used the following third party works:
+
+* Beautiful and easy on the eyes [Solarized][01] color scheme that is
+  work of [Ethan Schoonover][02].
+* Modified Shell Script indent file that is a part of the original Vim
+  runtime.
 
 ## Author
 
