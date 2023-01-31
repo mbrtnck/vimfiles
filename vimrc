@@ -1,6 +1,6 @@
 " Configuration file for Vim text editor
 "
-" Latest revision: 2023-01-28
+" Latest revision: 2023-01-31
 "
 " Copyright (c) 2002 Mikołaj Bartnicki <mikolaj@bartnicki.org>
 " All rights reserved.
@@ -9,7 +9,7 @@
 set nocompatible
 
 " i18n settings
-set langmenu=en_US.UTF-8        " language of menu and messages
+language messages en_US.UTF-8   " language of messages
 set encoding=UTF-8              " encoding used to display edited file
 set fileencoding=UTF-8          " encoding used to save edited file
 
@@ -63,6 +63,7 @@ endif
 
 " gVim-specific settings
 if has("gui_running")
+    set langmenu=en_US.UTF-8    " language of GUI window menus
     set columns=85              " window geometry (width)
     set lines=37                " window geometry (height)
     set number                  " display line numbers
