@@ -23,7 +23,7 @@ set tabstop=8                   " tab size (columns)
 set expandtab                   " fill tabs with spaces, use <C-v><Tab> for tab
 set shiftwidth=4                " indentation depth
 set softtabstop=4               " <Backspace> over indentation
-set backspace=indent,eol,start  " <Backspace> over everything in insert mode
+set backspace=indent,eol,start  " <Backspace> over everything in Insert mode
 set nojoinspaces                " no extra space after a dot when joining lines
 set breakindent                 " keep indentation when breaking long lines
 set linebreak                   " don't break lines in the middle of the word
