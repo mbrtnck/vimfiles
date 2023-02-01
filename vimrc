@@ -134,21 +134,13 @@ inoremap <F4> <C-o>:set list!<CR>
 nnoremap <F5> :nohl<CR>
 inoremap <F5> <C-o>:nohl<CR>
 
-" press [Ctrl]+[F5] to Polish spellcheck (z= for proposed corrections)
-nnoremap <C-F5> :set spell! spelllang=pl<CR>
-inoremap <C-F5> <Esc>:set spell! spelllang=pl<CR>
+" press [Ctrl]+[F6] to Polish spellcheck (z= for proposed corrections)
+nnoremap <C-F6> :set spell! spelllang=pl<CR>
+inoremap <C-F6> <Esc>:set spell! spelllang=pl<CR>
 
-" press [Alt]+[F5] to English spellcheck (z= for proposed corrections)
-nnoremap <M-F5> :set spell! spelllang=en<CR>
-inoremap <M-F5> <Esc>:set spell! spelllang=en<CR>
-
-" press [F6] to sort current paragraph
-nnoremap <F6> m'vip:sort<CR>``zz
-inoremap <F6> <Esc>m'vip:sort<CR>``zzgi
-
-" press [Ctrl]+[F6] to sort current paragraph removing duplicate lines
-nnoremap <C-F6> m'vip:sort u<CR>``zz
-inoremap <C-F6> <Esc>m'vip:sort u<CR>``zzgi
+" press [Alt]+[F6] to English spellcheck (z= for proposed corrections)
+nnoremap <M-F6> :set spell! spelllang=en<CR>
+inoremap <M-F6> <Esc>:set spell! spelllang=en<CR>
 
 " press [F7] to automatically break long lines at 72nd column
 nnoremap <F7> :set textwidth=72<CR>
@@ -166,10 +158,18 @@ inoremap <F9> <C-o>:set textwidth=0<CR>
 nnoremap <F10> m'ggVG=``zz
 inoremap <F10> <Esc>m'ggVG=``zzgi
 
-" press [F11] to justify current paragraph (macros/justify.vim required)
-nmap <F11> m'vip_j``zz
-imap <F11> <Esc>m'vip_j``zzgi
+" press [Ctrl]+[F11] to justify current paragraph (macros/justify.vim required)
+nmap <C-F11> m'vip_j``zz
+imap <C-F11> <Esc>m'vip_j``zzgi
 
-" press [Ctrl]+[F11] to justify the whole file (macros/justify.vim required)
-nmap <C-F11> m'_j``zz
-imap <C-F11> <Esc>m'_j``zzgi
+" press [Alt]+[F11] to justify the whole file (macros/justify.vim required)
+nmap <M-F11> m'_j``zz
+imap <M-F11> <Esc>m'_j``zzgi
+
+" press [Ctrl]+[F12] to sort current paragraph
+nnoremap <F12> m'vip:sort<CR>``zz
+inoremap <F12> <Esc>m'vip:sort<CR>``zzgi
+
+" press [Alt]+[F12] to sort current paragraph removing duplicate lines
+nnoremap <M-F12> m'vip:sort u<CR>``zz
+inoremap <M-F12> <Esc>m'vip:sort u<CR>``zzgi
