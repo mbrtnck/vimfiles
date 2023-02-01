@@ -20,10 +20,10 @@ let loaded_matchparen = 1       " disable highlighting of matching parenthesis
 " edit settings
 set textwidth=0                 " don't wrap long lines by default
 set tabstop=8                   " tab size (columns)
-set expandtab                   " fill tabs with spaces, use <C-v><Tab> for tab
+set expandtab                   " fill tabs with spaces, tab is [Ctrl+V][Tab]
 set shiftwidth=4                " indentation depth
-set softtabstop=4               " <Backspace> over indentation
-set backspace=indent,eol,start  " <Backspace> over everything in Insert mode
+set softtabstop=4               " [Backspace] over indentation
+set backspace=indent,eol,start  " [Backspace] over everything in Insert mode
 set nojoinspaces                " no extra space after a dot when joining lines
 set breakindent                 " keep indentation when breaking long lines
 set linebreak                   " don't break lines in the middle of the word
@@ -134,11 +134,11 @@ inoremap <F4> <C-o>:set list!<CR>
 nnoremap <F5> :nohl<CR>
 inoremap <F5> <C-o>:nohl<CR>
 
-" press [Ctrl]+[F6] to Polish spellcheck (z= for proposed corrections)
+" press [Ctrl+F6] to Polish spellcheck (z= for proposed corrections)
 nnoremap <C-F6> :set spell! spelllang=pl<CR>
 inoremap <C-F6> <Esc>:set spell! spelllang=pl<CR>
 
-" press [Alt]+[F6] to English spellcheck (z= for proposed corrections)
+" press [Alt+F6] to English spellcheck (z= for proposed corrections)
 nnoremap <M-F6> :set spell! spelllang=en<CR>
 inoremap <M-F6> <Esc>:set spell! spelllang=en<CR>
 
@@ -158,18 +158,18 @@ inoremap <F9> <C-o>:set textwidth=0<CR>
 nnoremap <F10> m'ggVG=``zz
 inoremap <F10> <Esc>m'ggVG=``zzgi
 
-" press [Ctrl]+[F11] to justify current paragraph (macros/justify.vim required)
+" press [Ctrl+F11] to justify current paragraph (macros/justify.vim required)
 nmap <C-F11> m'vip_j``zz
 imap <C-F11> <Esc>m'vip_j``zzgi
 
-" press [Alt]+[F11] to justify the whole file (macros/justify.vim required)
+" press [Alt+F11] to justify the whole file (macros/justify.vim required)
 nmap <M-F11> m'_j``zz
 imap <M-F11> <Esc>m'_j``zzgi
 
-" press [Ctrl]+[F12] to sort current paragraph
+" press [Ctrl+F12] to sort current paragraph
 nnoremap <F12> m'vip:sort<CR>``zz
 inoremap <F12> <Esc>m'vip:sort<CR>``zzgi
 
-" press [Alt]+[F12] to sort current paragraph removing duplicate lines
+" press [Alt+F12] to sort current paragraph removing duplicate lines
 nnoremap <M-F12> m'vip:sort u<CR>``zz
 inoremap <M-F12> <Esc>m'vip:sort u<CR>``zzgi
