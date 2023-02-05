@@ -48,12 +48,11 @@ into it:
     cd dictionaries/pl_PL
     cp ../../vim/runtime/spell/pl/pl_PL.diff .
 
-Apply the Vim diff file. This will create `pl.utf-8.spl` dictionary file
-for Vim:
+Apply the Vim diff file:
 
     patch < pl_PL.diff
 
-Run Vim and make the spellcheck dictionary file by the command:
+Run Vim and make the spellcheck dictionary `*.spl` file by the command:
 
     mkspell! pl pl_PL
 
