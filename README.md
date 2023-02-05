@@ -52,7 +52,8 @@ Apply the Vim diff file:
 
     patch < pl_PL.diff
 
-Run Vim and make the spellcheck dictionary `*.spl` file by the command:
+Start Vim and make the spellcheck dictionary `*.spl` file by using (in
+Normal mode) Vim command:
 
     mkspell! pl pl_PL
 
