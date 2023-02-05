@@ -1,6 +1,6 @@
 " Configuration file for Vim text editor
 "
-" Latest revision: 2023-02-01
+" Latest revision: 2023-02-05
 "
 " Copyright (c) 2002 Mikołaj Bartnicki <mikolaj@bartnicki.org>
 " All rights reserved.
@@ -28,7 +28,7 @@ set nojoinspaces                " no extra space after a dot when joining lines
 set breakindent                 " keep indentation when breaking long lines
 set linebreak                   " don't break lines in the middle of the word
 
-" write settings
+" file saving settings
 set confirm                     " confirm :q in case of unsaved changes
 set nobackup                    " don't make backup~ files
 
