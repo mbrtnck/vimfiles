@@ -78,7 +78,8 @@ In this config set I used the following third party works:
 
 ## Author
 
-Copyright &copy; 2002 [Mikołaj Bartnicki][99]
+Copyright &copy; 2002 [Mikołaj Bartnicki][99]<br>
+All rights reserved.
 
 [00]: https://www.vim.org
 [01]: https://github.com/altercation/solarized
