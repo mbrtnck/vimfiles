@@ -1,9 +1,9 @@
 " Configuration file for Vim text editor
 "
-" Latest revision: 2023-02-05
+" Latest revision: 2023-03-02
 "
 " Copyright (c) 2002 Mikołaj Bartnicki <mikolaj@bartnicki.org>
-" All rights reserved.
+" Distributed under the terms of MIT License
 
 " work as vi improved instead of pure vi, must be the first instruction
 set nocompatible
