@@ -79,10 +79,11 @@ In this config set I used the following third party works:
 
 ## Author
 
-Copyright &copy; 2002 [Mikołaj Bartnicki][99]<br>
-All rights reserved.
+Copyright &copy; 2002 [Mikołaj Bartnicki][98]<br>
+Distributed under the terms of [MIT License][99]
 
 [00]: https://www.vim.org
 [01]: https://github.com/altercation/solarized
 [02]: https://ethanschoonover.com
-[99]: mailto://mikolaj@bartnicki.org
+[98]: mailto://mikolaj@bartnicki.org
+[99]: https://github.com/mbrtnck/vimfiles/blob/main/LICENSE.txt
