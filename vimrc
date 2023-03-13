@@ -27,8 +27,8 @@ set linebreak                   " don't break lines in the middle of the word
 " tabstop settings
 set tabstop=8                   " tab size (columns)
 set expandtab                   " fill tabs with spaces, tab is [Ctrl+V][Tab]
-set shiftwidth=2                " indentation depth
-set softtabstop=2               " [Backspace] over indentation
+set softtabstop=4               " number of spaces for [Tab] and [Backspace]
+set shiftwidth=2                " code indentation depth
 
 " file saving settings
 set confirm                     " confirm :q in case of unsaved changes
