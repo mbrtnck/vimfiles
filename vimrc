@@ -1,6 +1,6 @@
 " Configuration file for Vim text editor
 "
-" Latest revision: 2023-03-02
+" Latest revision: 2023-03-13
 "
 " Copyright (c) 2002 Mikołaj Bartnicki <mikolaj@bartnicki.org>
 " Distributed under the terms of MIT License
