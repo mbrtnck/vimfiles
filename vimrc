@@ -90,6 +90,9 @@ if has("autocmd")
     " wrap lines at 80 column in Markdown files
     autocmd FileType markdown set textwidth=80
 
+    " don't wrap long lines in Vim config file
+    autocmd FileType vim set textwidth=0
+
     " wrap lines at 72 column in git commit messages
     autocmd BufNewFile,BufReadPre COMMIT_EDITMSG set textwidth=72
 
