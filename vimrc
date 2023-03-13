@@ -17,16 +17,18 @@ set fileencoding=UTF-8          " encoding used to save edited file
 set ruler                       " show cursor position
 let loaded_matchparen = 1       " disable highlighting of matching parenthesis
 
-" edit settings
+" text settings
 set textwidth=0                 " don't wrap long lines by default
-set tabstop=8                   " tab size (columns)
-set expandtab                   " fill tabs with spaces, tab is [Ctrl+V][Tab]
-set shiftwidth=4                " indentation depth
-set softtabstop=4               " [Backspace] over indentation
 set backspace=indent,eol,start  " [Backspace] over everything in Insert mode
 set nojoinspaces                " no extra space after a dot when joining lines
 set breakindent                 " keep indentation when breaking long lines
 set linebreak                   " don't break lines in the middle of the word
+
+" tabstop settings
+set tabstop=8                   " tab size (columns)
+set expandtab                   " fill tabs with spaces, tab is [Ctrl+V][Tab]
+set shiftwidth=2                " indentation depth
+set softtabstop=2               " [Backspace] over indentation
 
 " file saving settings
 set confirm                     " confirm :q in case of unsaved changes
@@ -82,11 +84,11 @@ endif
 
 " automatic commands
 if has("autocmd")
-    " wrap lines at 72 column in plain text files
-    autocmd FileType text set textwidth=72
+    " wrap lines at 80 column in plain text files
+    autocmd FileType text set textwidth=80
 
-    " wrap lines at 72 column in Markdown files
-    autocmd FileType markdown set textwidth=72
+    " wrap lines at 80 column in Markdown files
+    autocmd FileType markdown set textwidth=80
 
     " wrap lines at 72 column in git commit messages
     autocmd BufNewFile,BufReadPre COMMIT_EDITMSG set textwidth=72
