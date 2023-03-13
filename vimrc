@@ -96,6 +96,12 @@ if has("autocmd")
     " wrap lines at 72 column in alpine e-mail client
     autocmd BufNewFile,BufReadPre /tmp/pico.* set textwidth=72
 
+    " use two columns tabstop for Go source code
+    autocmd FileType go set tabstop=2
+
+    " use two columns tabstop for Makefile code
+    autocmd FileType make set tabstop=2
+
     " delete empty or whitespace-only lines at the end of file
     autocmd BufWritePre * :%s/\(\s*\n\)\+\%$//ge
 
